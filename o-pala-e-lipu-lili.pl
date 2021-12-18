@@ -1,4 +1,4 @@
-# perl generar-cartes.pl  tokipona-cat.font > lipu-lili-toki-pona-katala.html
+# perl o-pala-e-lipu-lili.pl tokipona-cat.font > lipu-lili-toki-pona-toki-katala.html
 
 print <<__E__;
 <html>
@@ -6,11 +6,20 @@ print <<__E__;
   <link rel="stylesheet" href="https://davidar.github.io/linja-pona/stylesheet.css">
   <link rel="stylesheet" href="lipu-lili-toki-pona.css">
   <link rel="stylesheet" media="print" href="lipu-lili-toki-pona-lipu.css">
+  <script>
+    function oNasa(el) {
+      document.querySelectorAll('.lipu-lili').forEach((lipuLili) => {
+        lipuLili.style.order= el.checked ? Math.round(Math.random() * 10000) : 0;
+      });
+    }
+  </script>
 </head>
 <body>
 <input type="radio" name="lipu" id="sinpin" value="sinpin" checked> <label for="sinpin"><span class="linja-pona">sinpin: toki+pona</span> (sinpin: toki pona)</label>
 <br/>
-<input type="radio" name="lipu" id="monsi" value="monsi"> <label for="monsi"><span class="linja-pona">monsi: [_kalama_ali_tan_anpa_loje_ante]</span> (monsi: Katala)</label>
+<input type="radio" name="lipu" id="monsi" value="monsi"> <label for="monsi"><span class="linja-pona">monsi: toki [_kalama_ali_tan_anpa_loje_ante]</span> (monsi: toki Katala)</label>
+<br/>
+<input type="checkbox" onClick="oNasa(this)" id="nasa"> <label for="nasa"><span class="linja-pona">o nasa e lipu lili</span> (o nasa e lipu lili)</label>
 <div class="lipu">
 __E__
 
