@@ -26,6 +26,12 @@ body input[value="monsi"]:checked ~ .lipu .lipu-lili:active .sinpin {
 .toki-katala {
   font-size: 18px;
   text-align: center;
+  color: grey;
+  line-height: 1;
+}
+.lipu {
+  display: flex;
+  flex-flow: row wrap;
 }
 .lipu-lili {
   margin: 2px;
@@ -34,7 +40,8 @@ body input[value="monsi"]:checked ~ .lipu .lipu-lili:active .sinpin {
   padding: 5px;
   width: 20em;
   height: 15em;
-  display: inline-block;
+  display: flex;
+  flex-flow: column;
   vertical-align: middle;
 }
 .sinpin { 
@@ -53,7 +60,4 @@ body input[value="monsi"]:checked ~ .lipu .lipu-lili:active .sinpin {
   align-items: center;
   justify-content: center;
   gap: 8px;
-}
-.toki-katala {
-  line-height: 1;
 }

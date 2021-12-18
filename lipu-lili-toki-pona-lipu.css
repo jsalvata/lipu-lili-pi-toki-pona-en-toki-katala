@@ -12,6 +12,7 @@
     direction: rtl;
   }
   .lipu-lili {
+    display: inline-block;
     direction: ltr;
     page-break-inside: avoid;
   }
