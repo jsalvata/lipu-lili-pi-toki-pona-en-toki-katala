@@ -1,0 +1,2 @@
+Copieu aquest fitxers al directori del dictd (/usr/lib/dict generalment), i
+reinicieu el dimoni 'dictd'.

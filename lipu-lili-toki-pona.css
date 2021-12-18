@@ -1,0 +1,59 @@
+body input[value="sinpin"]:checked ~ .lipu .monsi {
+  display: none;
+}
+body input[value="monsi"]:checked ~ .lipu .sinpin {
+  display: none;
+}
+body input[value="sinpin"]:checked ~ .lipu .lipu-lili:active .sinpin {
+  display: none;
+}
+body input[value="monsi"]:checked ~ .lipu .lipu-lili:active .monsi {
+  display: none;
+}
+body input[value="sinpin"]:checked ~ .lipu .lipu-lili:active .monsi {
+  display: flex;
+}
+body input[value="monsi"]:checked ~ .lipu .lipu-lili:active .sinpin {
+  display: flex;
+}
+.sinpin .linja-pona {
+  font-size: 80px;
+  font-weight: 800;
+}
+.sitelen-lasino {
+  font-size: 24px;
+}
+.toki-katala {
+  font-size: 18px;
+  text-align: center;
+}
+.lipu-lili {
+  margin: 2px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  padding: 5px;
+  width: 20em;
+  height: 15em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sinpin { 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.monsi {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.toki-katala {
+  line-height: 1;
+}

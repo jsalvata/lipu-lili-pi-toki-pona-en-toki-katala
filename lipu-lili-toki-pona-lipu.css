@@ -1,0 +1,18 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  body > * { display: none; }
+  .lipu {
+    display: block;
+    width: 1024px;
+  }
+  body input[value="monsi"]:checked ~ .lipu {
+    direction: rtl;
+  }
+  .lipu-lili {
+    direction: ltr;
+    page-break-inside: avoid;
+  }
+}
