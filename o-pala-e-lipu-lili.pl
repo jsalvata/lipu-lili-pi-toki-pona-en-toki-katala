@@ -56,7 +56,7 @@ foreach (@ala) {
 
 print <<__E__;
 </div>
-<i>Copyleft Jordi Salvat i Alabart</i> &mdash; <i class="linja-pona">jan [_jan_olin_taso_insa] li wile e sina mute e ni kepeken wile sina</i>
+<i>Copyleft Jordi Salvat i Alabart</i> &mdash; <i class="linja-pona">jan [_jan_olin_sama_insa] li wile e ni: sina o mute e lipu ni kepeken wile sina</i>
 </body>
 </html>
 __E__
