@@ -26,8 +26,10 @@ body input[value="monsi"]:checked ~ .lipu .lipu-lili:active .sinpin {
 .toki-katala {
   font-size: 18px;
   text-align: center;
-  color: grey;
   line-height: 1;
+}
+.toki-katala i {
+  color: grey;
 }
 .lipu {
   display: flex;
