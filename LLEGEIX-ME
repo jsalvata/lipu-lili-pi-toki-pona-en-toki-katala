@@ -1,2 +1,9 @@
+Regenerar el diccionari:
+
 Copieu aquest fitxers al directori del dictd (/usr/lib/dict generalment), i
 reinicieu el dimoni 'dictd'.
+
+Regenerar l'HTML:
+
+perl o-pala-e-lipu-lili.pl < tokipona-cat.font > lipu-lili-toki-pona-toki-katala.html
+
